@@ -1,0 +1,150 @@
+.App {
+  height: 100vh;
+  background: url('./img.jpg'), rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+  background-position-x: right;
+  overflow: scroll;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  height: 60%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+}
+
+.header {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  background: black;
+  padding: 0.5rem 0;
+}
+
+.sub-text {
+  font-size: 35px;
+  color: #e4a94b;
+  font-weight: bold;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #842fb4 30%, #e4884b 60%);
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #842fb4 30%, #e4884b 60%);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.mint-button {
+  background: -webkit-linear-gradient(left, #d600a8, #ff6f8e);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-right: 15px;
+}
+
+.opensea-button {
+  background-color: rgb(32, 129, 226);
+}
+
+.mint-count {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background: rgb(44, 43, 43);
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-text:hover {
+  background: -webkit-linear-gradient(left, #d04ee7, #e4a94b);
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
